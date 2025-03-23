@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f3e7; /* Soft cream */
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #4a6b3a; /* Dark olive green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #708d57; /* Softer moss green hover */
+  }
+  
+  /* Hero Banner */
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 400px; /* Limits large images */
+    object-fit: cover;
+  }
+  
+  /* Content Sections */
+  .content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 8px solid #8b6a4a; /* Warm taupe border */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* List Styling */
+  .content ul {
+    padding-left: 20px;
+  }
+  
+  .content img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 15px auto;
+  }
+  
+  /* Map Styling */
+  .map iframe {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 15px auto;
+  }
+  
+ /* General Contact Form Styling */
+.contact-form {
+    max-width: 450px;
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 25px;
+    border: 2px solid #8b6a4a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box; /* Prevents overflow */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #8b6a4a;
+    border-radius: 5px;
+    background-color: #fefefe;
+  }
+  
+  
+  .contact-form input[type="submit"] {
+    background-color: #4a6b3a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #708d57;
+  }
+  
+  
+  /* Footer */
+  footer {
+    background-color: #8b6a4a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* 📱 MOBILE RESPONSIVENESS */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .content {
+      padding: 15px;
+      border-left: none;
+      border-radius: 0;
+    }
+  
+    .hero img {
+      max-height: 250px; /* Smaller banner on mobile */
+    }
+  
+    footer {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
